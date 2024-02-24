@@ -7,11 +7,17 @@ This app was made as an example of a modern application, with its minimalistic a
 ## Usage
 If you want to use this app, you first need to clone the repository and do npm install on both directories. After that you will need to register an account in [Pexels.](https://www.pexels.com/join/)
 Then you can get your own [api key.](https://www.pexels.com/api/) 
-![Alt text](image-2.png)
+
+![Alt text](images/image-2.png)
+
 You will then need to put that into a .env file inside the server folder
-![Alt text](image-1.png)
+
+![Alt text](images/image-1.png)
+
  or put the api key into the variable inside index.js.
-![Alt text](image.png) 
+ 
+![Alt text](images/image.png) 
+
 After that you should be able to run the app succesfully.
 
 ## License
