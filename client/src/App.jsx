@@ -42,11 +42,11 @@ function App() {
         <h1 className="text-3xl font-bold">Catgram</h1>
         <p className="text-sm md:text-base">Powered by <a target="_blank" href="https://www.pexels.com">Pexels</a></p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 max-w-[90rem] px-4 py-2 rounded-lg my-2 mx-2">  
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 max-w-[90rem] px-4 py-2 rounded-lg my-2 mx-2">  
         {images.map((image) => (
-          <div key={image.id} className="w-[20rem] h-[31.5rem] md:w-[20rem] md:h-[32rem] 2xl:w-[28.5rem] 2xl:h-[40rem] my-4 shadow-md transition-all duration-200 hover:shadow-lg image-container relative">
-            <a target="_blank" href={image.url}><img alt={image.alt} className="w-[20rem] h-[31.5rem] md:w-[20rem] md:h-[32rem] 2xl:w-[28.5rem] 2xl:h-[40rem] rounded-lg transition-all duration-300 hover:opacity-90 shadow-sm" src={image.src.large} loading="lazy"/></a>
-            <div onClick={() => {navigator.clipboard.writeText(image.url)}} className="svg-container opacity-100 xl:opacity-0 transition-opacity duration-200 cursor-pointer absolute top-[400px] 2xl:top-[560px] right-4 hover:shadow-2xl hover:bg-[#c06d78] bg-[#BED1CF] rounded-full shadow-md p-4">
+          <div key={image.id} className="w-[15rem] h-[26.5rem] sm:w-[20rem] sm:h-[31.5rem] md:w-[20rem] md:h-[32rem] 2xl:w-[28.5rem] 2xl:h-[40rem] my-4 shadow-md transition-all duration-200 hover:shadow-lg image-container relative">
+            <a target="_blank" href={image.url}><img alt={image.alt} className="w-[15rem] h-[26.5rem] sm:w-[20rem] sm:h-[31.5rem] md:w-[20rem] md:h-[32rem] 2xl:w-[28.5rem] 2xl:h-[40rem] rounded-lg transition-all duration-300 hover:opacity-90 shadow-sm" src={image.src.large} loading="lazy"/></a>
+            <div onClick={() => {navigator.clipboard.writeText(image.url)}} className="svg-container opacity-100 xl:opacity-0 transition-opacity duration-200 cursor-pointer absolute top-[320px] sm:top-[400px] 2xl:top-[560px] right-4 hover:shadow-2xl hover:bg-[#c06d78] bg-[#BED1CF] rounded-full shadow-md p-4">
               <img className="w-6 h-6" src="clone.svg" alt="Copy Link" />
             </div>
             <p className="cursor-default w-fit h-fit">
