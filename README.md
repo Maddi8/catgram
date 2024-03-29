@@ -3,6 +3,7 @@ catgram is a single-page application for all of your cat viewing needs. It has b
 
 ## About
 This app was made as an example of a modern application, with its minimalistic and responsive design. You can use this app as a basis for your own projects. The app uses the Pexels api for retrieving free images.
+![Alt text](images/image-3.png)
 
 ## Usage
 If you want to use this app, you first need to clone the repository and do npm install on both directories. After that you will need to register an account in [Pexels.](https://www.pexels.com/join/)
